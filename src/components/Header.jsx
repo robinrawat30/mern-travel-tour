@@ -1,7 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import AuthCard from '../pages/cardspage/AuthCard'
 
 const Header = () => {
+
+  const [btnstyle,setBtnStyle]=useState("hidden");
+
+  const handleOnClick =()=>{
+    if(btnstyle==="hidden"){
+      setBtnStyle("block");
+    }
+    else{
+      setBtnStyle("hidden");
+    }
+  }
+
 
   const navItem = (
 
@@ -19,7 +32,7 @@ const Header = () => {
 
   return (
     <>
-      <div className=" max-w-screen-2xl m-auto py-20  md:py-5 px-4 md:px-20">
+      <div className=" max-w-screen-2xl rounded-lg shadow-xl m-auto py-20  md:py-5 px-4 md:px-20">
         <div className="navbar  lg:fixed lg:z-50 lg:left-0 lg:top-0  py-3  right-0 bg-base-100">
           <div className="navbar-start">
             <div className="dropdown">
@@ -51,8 +64,23 @@ const Header = () => {
                 {navItem}
               </ul>
             </div>
+            <div className="flex flex-col gap-1 justify-start items-end">
 
-            <a className="btn  bg-blue-500 text-white">Login</a>
+              <div>
+                <Link className="btn btn-wide font-sans bg-orange-500 uppercase text-sm text-white" onClick={handleOnClick}  >Login / Signup </Link>
+               <AuthCard   btnstyle={btnstyle}/>
+
+              </div>
+            
+               
+             
+
+
+
+            </div>
+
+
+
           </div>
         </div>
       </div>

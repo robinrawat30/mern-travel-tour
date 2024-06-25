@@ -19,10 +19,10 @@ const PackageCard = ({item}) => {
                     <div className="card-body">
                         <h2 className="card-title text-xl font-sans">{item.title}</h2>
                         <p className="text-sm font-sans">{item.description}</p>
-                        <div className="divider"></div>
+                        <div className="divider  my-0"></div>
 
                         <div className="card-actions flex  justify-between items-center">
-                            <button className="btn  bg-green-500 text-white">Buy Now</button>
+                            <button className="btn   bg-orange-500 text-white">Buy Now</button>
                             <div>
                             <p>Rs.{item.price}</p>
                             </div>

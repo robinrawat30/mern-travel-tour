@@ -2,10 +2,11 @@ import React from 'react'
 import { Routes,Route } from 'react-router-dom'
 import Home from '../pages/Homepage/Home'
 import About from '../pages/Aboutpage/About'
-import Packages from '../pages/Packagespage/Packages'
+
 import DashBoard from '../pages/Dashboardpage/DashBoard'
 import SignUp from '../pages/AuthPages/SignUp'
 import LogIn from '../pages/AuthPages/LogIn'
+import Packages from '../pages/Packagespage/Packages'
 
 const PageRoutes = () => {
   return (

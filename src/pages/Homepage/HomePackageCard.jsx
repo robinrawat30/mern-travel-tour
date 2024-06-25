@@ -13,6 +13,7 @@ import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 
 import list from '../../../public/list.json'
 import PackageCard from '../cardspage/PackageCard';
+import AirplaneTicketIcon from '@mui/icons-material/AirplaneTicket';
 
 
 
@@ -21,8 +22,8 @@ const HomePackageCard = () => {
 
         <>
             <div className=" max-w-screen-2xl space-y-4 m-auto py-4 lg:py-5 px-4 lg:px-20 ">
-                <div className="flex gap-4 items-center flex-col">
-                    <h1 className="text-5xl text-center font-sans font-semibold" >Most Popular Trips</h1>
+                <div className="flex py-4 md:py-8 gap-4 items-center flex-col">
+                    <h1 className="text-5xl text-center font-sans font-semibold" >Most Popular Trips <AirplaneTicketIcon fontSize='60'/></h1>
                     <p className=" text-xl text-center text-gray-600 font-sans ">Choose Our popular destination</p>
                 </div>
                 <div>
@@ -69,7 +70,7 @@ const HomePackageCard = () => {
 
                 </div>
 
-            </div >
+            </div>
         </>
     )
 }
